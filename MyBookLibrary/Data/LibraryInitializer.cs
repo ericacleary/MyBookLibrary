@@ -1,9 +1,9 @@
 ﻿using MyBookLibrary.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
+
+//This is for Seeding my database
 namespace MyBookLibrary.Data
 {
     public class LibraryInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<LibraryContext>
