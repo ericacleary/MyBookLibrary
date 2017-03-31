@@ -10,7 +10,7 @@ namespace MyBookLibrary.Data
     {
         protected override void Seed(LibraryContext context)
         {
-            var book = new List<Books>
+            var books = new List<Books>
             {
                 new Books { Title ="Pride and Prejudice", Author = "Jane Austen", DatePublished = DateTime.Parse("1/28/1813") },
                 new Books { Title ="The Valley of the Horses", Author = "Jean Auel", DatePublished = DateTime.Parse("4/13/1982") },
@@ -19,7 +19,7 @@ namespace MyBookLibrary.Data
                 new Books { Title ="The Order of the Phoenix", Author = "J.K. Rowling", DatePublished = DateTime.Parse("6/21/2003") }
 
             };
-            book.ForEach(b => context.books.Add(b));
+            books.ForEach(b => context.books.Add(b));
             context.SaveChanges();
         }
     }

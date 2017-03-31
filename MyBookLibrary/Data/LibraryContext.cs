@@ -12,6 +12,7 @@ namespace MyBookLibrary.Data
     {
         public LibraryContext() : base("LibraryContext")
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<LibraryContext>());
         }
 
         public DbSet<Books> books { get; set; }
